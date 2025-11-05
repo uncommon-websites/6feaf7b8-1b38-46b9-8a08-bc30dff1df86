@@ -10,12 +10,20 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+	title="Turn inaccessible knowledge into instant field support"
+	subtitle="AI-powered mobile guidance that gives your technicians the answers they need, exactly when they need them."
+	imageSrc="/generated/image-a-field-technician-in-sturdy-workwear-st.webp"
+	centered={false}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by field service leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/servicenow.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/siemens.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/honeywell.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/se.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
