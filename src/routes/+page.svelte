@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+
+	// Icons
+	import IconBrain from "~icons/lucide/brain";
+	import IconSmartphone from "~icons/lucide/smartphone";
+	import IconDatabase from "~icons/lucide/database";
+	import IconZap from "~icons/lucide/zap";
+	import IconRocket from "~icons/lucide/rocket";
+	import IconBarChart from "~icons/lucide/bar-chart-3";
 </script>
 
 <Hero
@@ -26,62 +34,97 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="Frontline captures decades of operational knowledge and delivers it instantly to field technicians through mobile AI guidance. When a technician faces a complex repair, they get step-by-step instructions, troubleshooting help, and expert answers in real-time, transforming inaccessible manuals and tribal knowledge into actionable field support that reduces downtime and accelerates training."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Maria Rodriguez",
+			position: "Operations Manager",
+			company: "Summit HVAC Services",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Frontline cut our technician onboarding time from 6 weeks to 9 days. New hires are confident in the field immediately, and our first-time fix rate jumped 42% in just three months.",
+			image: "/generated/image-a-professional-hispanic-woman-who-is-an-.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Marcus Williams",
+			position: "Field Service Director",
+			company: "Elevate Industrial Solutions",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"We eliminated 18 hours per week of support calls by giving technicians instant answers at their fingertips. The ROI was clear within 60 days—reduced downtime alone saved us $230K annually.",
+			image: "/generated/image-a-professional-black-man-who-is-a-field-.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Jennifer Chen",
+			position: "VP of Operations",
+			company: "Precision Electrical Services",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Our callback rate dropped from 23% to 9% within the first quarter. Technicians solve complex issues on the first visit because they have expert knowledge in their pocket.",
+			image: "/generated/image-a-professional-asian-woman-who-is-a-vp-o.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Everything your technicians need, right in their pocket"
+	subtitle="Transform inaccessible knowledge into instant answers that keep your field team moving forward"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Instant AI answers",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Get accurate solutions in seconds, not hours. Your technicians tap into AI-powered guidance that understands context and delivers exactly what they need to complete the job.",
+			icon: IconBrain
 		},
 		{
-			title: "Data Analysis",
+			title: "Mobile-first access",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Work where the work happens. Our intuitive mobile interface puts your entire knowledge base in every technician's pocket, accessible even in the harshest field conditions.",
+			icon: IconSmartphone
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Operational knowledge capture",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Turn tribal knowledge into organizational intelligence. Automatically capture insights from every repair, building a smarter system that learns from your team's expertise.",
+			icon: IconDatabase
+		},
+		{
+			title: "Real-time guidance",
+			description:
+				"Never feel stuck on a job again. Step-by-step instructions and visual aids guide technicians through complex repairs, reducing errors and building confidence.",
+			icon: IconZap
+		},
+		{
+			title: "Instant deployment",
+			description:
+				"Go live in hours, not months. Skip the lengthy training programs and complicated rollouts with our plug-and-play mobile solution that works from day one.",
+			icon: IconRocket
+		},
+		{
+			title: "Performance intelligence",
+			description:
+				"See what's working and what needs attention. Track resolution times, identify knowledge gaps, and measure ROI with actionable insights that drive continuous improvement.",
+			icon: IconBarChart
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction 
+	title="Ready to transform your field operations?"
+	subtitle="See results in days, not months"
+	description="Join operations leaders who've already cut onboarding time by 75% and boosted first-time fix rates by 42%. Get a personalized demo and see how Frontline delivers instant mobile guidance that works from day one."
+	imageSrc="/generated/image-a-confident-field-technician-stands-in-a.webp"
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Book your demo",
+			variant: "primary"
+		},
+		{
+			href: "/contact",
+			label: "Talk to our team",
+			variant: "secondary"
+		}
+	]}
+/>

@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"I watched brilliant technicians struggle because their company's knowledge was locked in manuals no one could access in the field. We're changing that—turning decades of expertise into instant mobile support that keeps people moving forward."`}
 			/>
 
 			<!-- Team Member & CTA Section -->
